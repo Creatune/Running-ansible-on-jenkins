@@ -1,0 +1,40 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  become: yes
+  tasks:
+
+  - name: install apt
+    yum:
+      name: apt
+      state: present
+
+
+  - name: update apt
+    yum:
+      name: apt
+      state: latest
+
+  - name: install git
+    yum:
+      name: git
+      state: present
+
+
+  - name: update git
+    yum:
+      name: git
+      state: latest
+
+  - name: install tcpdump
+    yum:
+      name: tcpdump
+      state: present
+
+
+  - name: update tcpdump
+    yum: 
+      name: tcpdump 
+      state: latest
+
+
