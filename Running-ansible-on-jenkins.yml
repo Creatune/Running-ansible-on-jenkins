@@ -15,26 +15,3 @@
       name: apt
       state: latest
 
-  - name: install git
-    yum:
-      name: git
-      state: present
-
-
-  - name: update git
-    yum:
-      name: git
-      state: latest
-
-  - name: install tcpdump
-    yum:
-      name: tcpdump
-      state: present
-
-
-  - name: update tcpdump
-    yum: 
-      name: tcpdump 
-      state: latest
-
-
